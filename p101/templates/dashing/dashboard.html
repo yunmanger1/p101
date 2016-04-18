@@ -1,0 +1,8 @@
+{% extends 'dashing/base.html' %}
+{% load staticfiles %}
+
+{% block config_file %}
+<script>var socket_uri = "/admin/ws";</script>
+<script type="text/javascript" src="{% static 'model_events/js/socket.js' %}"></script>
+<script type="text/javascript" src="{% static 'dashing/dashing-config.js' %}"></script>
+{% endblock %}
